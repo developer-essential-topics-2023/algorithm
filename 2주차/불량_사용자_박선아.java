@@ -1,5 +1,3 @@
-package 2주차;
-
 import java.util.*;
 
 /**
@@ -9,8 +7,8 @@ public class 불량_사용자_박선아 {
     public static Set<Set<String>> nameList;
 
     public static void main(String[] args) {
-        String[] user_id = new String[]{"frodo", "fradi", "crodo", "abc123", "frodoc"};
-        String[] banned_id = new String[]{"fr*d*", "abc1**"};
+        String[] user_id = new String[] { "frodo", "fradi", "crodo", "abc123", "frodoc" };
+        String[] banned_id = new String[] { "fr*d*", "abc1**" };
 
         nameList = new HashSet<>();
 
@@ -32,17 +30,19 @@ public class 불량_사용자_박선아 {
         for (int i = 0; i < user_id.length; i++) {
             if (!set.contains(user_id[i]) && checkMatch(user_id[i], banned_id[index])) {
                 set.add(user_id[i]);
-                dfs(new HashSet<>(set), index+1, user_id, banned_id);
+                dfs(new HashSet<>(set), index + 1, user_id, banned_id);
                 set.remove(user_id[i]);
             }
         }
     }
 
-    public static boolean checkMatch (String userId, String bannedId) {
-        if (userId.length() != bannedId.length()) return false;
+    public static boolean checkMatch(String userId, String bannedId) {
+        if (userId.length() != bannedId.length())
+            return false;
 
         for (int i = 0; i < userId.length(); i++) {
-            if (bannedId.charAt(i) != '*' && userId.charAt(i) != bannedId.charAt(i)) return false;
+            if (bannedId.charAt(i) != '*' && userId.charAt(i) != bannedId.charAt(i))
+                return false;
         }
         return true;
     }
