@@ -22,3 +22,9 @@
 - [순위 검색 - Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/72412) </br>
 - [입국심사 - Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43238) </br>
 - [징검다리 - Level 4](https://school.programmers.co.kr/learn/courses/30/lessons/43236) </br>
+
+#### 5주차: 2023.06.15 (동적 프로그래밍)
+- [피보나치 수 - Level 2](https://school.programmers.co.kr/learn/courses/30/lessons/12945) </br>
+- [정수 삼각형 - Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/43105) </br>
+- [등굣길 - Level 3](https://school.programmers.co.kr/learn/courses/30/lessons/42898) </br>
+- [사칙연산 - Level 4](https://school.programmers.co.kr/learn/courses/30/lessons/1843) </br>
